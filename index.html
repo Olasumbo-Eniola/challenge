@@ -6,6 +6,18 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Frontend Mentor | Intro component with sign up form</title>
     <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    <script>
+     function validateForm() {
+var y = 'name must be filled';
+  var x = document.forms["myForm"]["F`name"].value;
+  if (x == "") {
+   document.getElementById('send').innerHTML = y;
+    return false;
+  }
+}
+    </script>
+
   </head>
   <body>
     <div id="main">
@@ -17,15 +29,35 @@
     <div class="try">
       <h4 >Try it free 7 days then $20/mo thereafter</h4>
     </div>
-    <form class="modal-content" action="/action_page.php">
+    <form name="myForm"class="modal-content" action="/action_page.php" onsubmit="return validateForm()">
       <div class="container">
       
     
-        <input type="text" placeholder="First Name" name="Fname" required>
-        <input type="text" placeholder="Last Name" name="Lname" required>
-        <input type="email" placeholder="Email" name="email" required>
-
-        <input type="password" placeholder="Password" name="repeat" required>
+        <input type="text" placeholder="First Name" name="Fname" >
+        <small id="active"></small>
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" >
+          <g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/>
+            <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/>
+            <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+           
+        <input type="text" placeholder="Last Name"   name="Lname">
+        <small id="Lname"></small>
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/>
+          <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/>
+          <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        <input type="email" placeholder="Email" name="email">
+        <small id="mail"></small>
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/>
+          <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/>
+          <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        <input type="password" placeholder="Password" name="repeat" >
+        <small id="psw"></small>
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/>
+          <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/>
+          <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
         <input type="submit" value="CLAIM YOUR FREE TRIAL" >
         <p style="color: black;">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
   
@@ -33,6 +65,16 @@
       </div>
     </form>
   </div>
+  <script>
+    function validateForm(){
+    var y = 'First name cannot be empty';
+    var x = document.forms['myForm']['Fname'].value;
+    if (x === ''){
+   document.getElementsByTagName('svg').innerHTML = y;     document.getElementById('active').innerHTML = y;
+        return false
+    }
+}
+  </script>
     
   </body>
 </html>
