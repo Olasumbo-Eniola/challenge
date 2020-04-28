@@ -1,94 +1,119 @@
-body{
-    background-image: url("images/bg-intro-desktop.png");
-    background-color: rgb(255, 128, 128);
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 100%;
-}
-#main{
-  width: 27%;    text-align: justify; 
-    margin-top: 20%;
-    margin-left: 20%;
-}
-h2{
-    font-size: 40px;
-    font-weight: bold;
-}
-.try{
-    position: static;
-    background-color: rgb(97, 19, 223);
-  margin-right: 5%;
-  margin-left:55%;
-  margin-top: -33%;
-  padding-top: 0.4px;
- text-align: center;
-height: 55px;
-  width: 40%; 
-  margin-right: 5%;
-  border-radius: 10px;
-  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.4);
-  
-}
+* {box-sizing: border-box}
 
-* {box-sizing: border-box;}
-
-/* Full-width input fields */
-input[type=text], input[type=password], input[type=email] {
-  width: 100%;
-  padding: 15px;
-  
-margin-right: 3%;
-margin-top: 3%;
-  display: inline-block;
-  background: #ffffff;
-  border: 1px solid #b3b2b2f1;
-}
-input[type=submit]{
-    width: 100%;
-  padding: 15px;
-  margin-right: 3%;
-  margin-top: 3%;
-  display: inline-block;
-  background: #4caf4c;
-  color: #ffffff;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-/* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus , input[type=email]:focus{
-  background-color: #ffffff;
-  border: 1px solid black;
-  outline: none;
-}
-
+/* style the container */
 .container {
-  padding: 16px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- 
+  position: relative;
+  border-radius: 5px;
+  padding: 20px 0 30px 0;
 }
 
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; 
-  border-radius: 10px;
-  width: 40%; 
-  margin-right: 5%;
-  margin-top: 4%;
-  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.4);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* style inputs and link buttons */
+input,
+.btn{
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; 
+  background-color: white;
+  border: 1px solid black;
+  
+}
+.mo{
+  width: 100%;
+  background-color: rgb(180, 27, 180);
+
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
 }
 
 
+/* style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
 
-.clearfix::after {
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+.colone{
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+.row:after {
   content: "";
-  clear: both;
   display: table;
+  clear: both;
 }
-small{
-  color: red;
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
 }
-svg{
-  float: right;
-  margin-top: 8px;
+
+/* text inside the vertical line */
+.inner {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
 }
