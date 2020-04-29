@@ -1,7 +1,14 @@
+body{
+  background-image: url("images/bg-intro-desktop.png");
+  background-color: rgb(255, 128, 128);
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 * {box-sizing: border-box}
 
 /* style the container */
 .container {
+  margin-top: 5%;
   position: relative;
   border-radius: 5px;
   padding: 20px 0 30px 0;
@@ -10,24 +17,20 @@
 /* style inputs and link buttons */
 input,
 .btn{
+  position: relative;
   width: 100%;
   padding: 12px;
   border: none;
   border-radius: 4px;
-  margin: 5px 0;
+  margin-top: 5%;
   opacity: 0.85;
   display: inline-block;
   font-size: 17px;
   line-height: 20px;
   text-decoration: none; 
-  background-color: white;
-  border: 1px solid black;
+  background-color: transparent;
+  border: 1px solid rgba(126, 120, 120, 0.623);
   
-}
-.mo{
-  width: 100%;
-  background-color: rgb(180, 27, 180);
-
 }
 
 input:hover,
@@ -55,51 +58,36 @@ input[type=submit]:hover {
   padding: 0 50px;
   margin-top: 6px;
 }
-.colone{
-  float: left;
-  width: 50%;
-  margin: auto;
-  padding: 0 50px;
-  margin-top: 6px;
+.color{
+  background-color: white;
+  padding: 20px;
+  margin-top: 10%;
+margin-right: 12%;
+  border-radius: 10px;
+ 
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.4);
+  
 }
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* vertical line */
-.vl {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  border: 2px solid #ddd;
-  height: 175px;
-}
-
-/* text inside the vertical line */
-.inner {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  padding: 8px 10px;
-}
-
-/* hide some text on medium and large screens */
-.hide-md-lg {
-  display: none;
-}
-
-/* bottom container */
-.bottom-container {
+.try{
+  background-color: blueviolet;
+padding: 1px;
+  border-radius: 10px;
   text-align: center;
-  background-color: #666;
-  border-radius: 0px 0px 4px 4px;
+  margin-right: 13.5%;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.4);
+
+  
 }
+.text{
+  margin-left: 24%;
+  margin-top: 29%;
+}
+
+.text > h2{
+ font-size: 45px;
+ font-weight: bolder;
+}
+
 
 /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 650px) {
@@ -107,13 +95,30 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }
-  /* hide the vertical line */
-  .vl {
-    display: none;
-  }
-  /* show the hidden text on small screens */
-  .hide-md-lg {
-    display: block;
-    text-align: center;
-  }
+ .container{
+   margin: auto;
+ }
+ .text{
+   margin-top: 5%;
+   margin-left: 5%;
+ }
+ .try{
+   margin-top: 5%;
+ }
+ .color{
+   margin-bottom: 9%;
+ }
 }
+svg{
+  position: absolute;
+margin-top:32px;
+ float: right;
+ margin-left: 30%;
+ display: none;
+}
+small{
+  color: red;
+  float: right;
+  display: none;
+}
+

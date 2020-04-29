@@ -11,26 +11,58 @@
   </head>
   <body>
     <div class="container">
-      <form action="/action_page.php">
-        <div class="row">
-          <h2 style="text-align:center">Login with Social Media or Manually</h2>
-          
+      <form action="/action_page.php" onclick="return validatebtn()" name="form">
     
           <div class="col">
-           <h4>Learn to code by watching others</h4>
+            <div class="text">
+           <h2>Learn to code by<br> watching others</h2>
            <p>See how experienced developer solve problem in real time
-             <br>Watching scripted tutorials is great but understanding how developers
+             <br>Watching scripted tutorials is great but understanding how<br> developers
              think is invaluable</p>
-           
+           </div>
           </div>
           
     
-          <div class="colone">
-            
-            <input type="text" name="username" placeholder="Username" required>
-             <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Login">
+          <div class="col">
+            <div class="try">
+<h4>Try it free 7 days and $20/mo thereafter</h4>
+</div>
+<div class="color">
+  <label for="firstname">
+  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/>
+    <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/>
+    <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+            <input class="sec" type="text" name="username" placeholder="First name" id="firstname"required style="margin-top: 5%;">
+            <small id="firstname">First Name cannot be empty</small>
+          </label>
+            <label for="lname">
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/>
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/>
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+                <input class="sec" type="text" name="lname" placeholder="Last name" id="lname">
+            <small id="lname">Last naame cannot be empty</small>
+              </label>
+            <label for="email">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/>
+              <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/>
+              <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+             <input class="sec" type="email" name="email" placeholder="Email" id="email" required>
+             <small id="email">This does not look like an email</small>
+             <small id="mail">Email cannot be empty</small>
+            </label>
+             <label for="psw">
+             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" id="svg">
+              <g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/>
+              <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/>
+              <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+            <input class="sec" type="password" name="password" placeholder="Password" id="psw"required>
+            <small id="psw">Password cannot be empty</small>
+          </label>
+            <input type="submit" value="CLAIM YOUR FREE TRIAL" style="border: none; margin-top: 8%; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <p style="color: rgba(126, 120, 120, 0.623);">  By clicking the button you agree to our <span style="color:red;">Terms and Services</span></p>
           </div>
           
         </div>
@@ -40,6 +72,12 @@
       </div>
     </form>
   </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Savage Codes</a>.
+    </p>
+  </footer>
   </main>
   </body>
 </html>
