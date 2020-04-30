@@ -18,7 +18,7 @@ function validateForm(){
     document.getElementsByTagName('small')[1].style.display = 'block';
     document.getElementsByTagName('input')[1].style.border = '2px solid red';
     return false;
-  }else if (outputs[2] == mail){
+  }else if (outputs[2] == mail || outputs[2] == null || outputs[2] == ''){
     document.getElementsByTagName('svg')[2].style.display = 'block';
     document.getElementsByTagName('small')[3].style.display = 'block';
     document.getElementsByTagName('input')[2].style.border = '2px solid red';
