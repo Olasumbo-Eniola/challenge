@@ -30,7 +30,7 @@ function validateForm(){
   }else{
     
     alert('Form sucessfully submitted');
-    document.forms('form').reset();
+    location.reload()
     return true;
   }
 }
