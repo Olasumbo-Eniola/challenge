@@ -141,12 +141,9 @@ small{
 }
 @media  screen and (max-width: 600px){
   svg{
-    margin-left: 68%;
+    margin-left: 60%;
   }
 }
 footer{
   margin-top: 15%;
 }
-
-
-
