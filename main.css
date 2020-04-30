@@ -30,7 +30,7 @@ input{
 
 
 input:focus{
-  border: none;
+  border: 1px solid black;
   background-color: transparent;
 }
 input:active{
@@ -131,7 +131,7 @@ svg{
   position: absolute;
 margin-top:32px;
  float: right;
- margin-left: 30%;
+ margin-left: 26%;
  display: none;
 }
 small{
@@ -144,5 +144,9 @@ small{
     margin-left: 68%;
   }
 }
+footer{
+  margin-top: 15%;
+}
+
 
 
