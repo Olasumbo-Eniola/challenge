@@ -15,27 +15,27 @@ body{
 }
 
 /* style inputs and link buttons */
-input,
-.btn{
+input{
   position: relative;
   width: 100%;
   padding: 12px;
-  border: none;
   border-radius: 4px;
   margin-top: 5%;
-  opacity: 0.85;
-  display: inline-block;
   font-size: 17px;
   line-height: 20px;
-  text-decoration: none; 
   background-color: transparent;
   border: 1px solid rgba(126, 120, 120, 0.623);
   
 }
 
-input:hover,
-.btn:hover {
-  opacity: 1;
+
+input:focus{
+  border: none;
+  background-color: transparent;
+}
+input:active{
+  border: none;
+  color: transparent;
 }
 
 
@@ -44,13 +44,22 @@ input[type=submit] {
   background-color: #4CAF50;
   color: white;
   cursor: pointer;
+  position: relative;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 5%;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
 }
 
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Two-column layout */
+
 .col {
   float: left;
   width: 50%;
@@ -62,7 +71,7 @@ input[type=submit]:hover {
   background-color: white;
   padding: 20px;
   margin-top: 10%;
-margin-right: 12%;
+margin-right: 17%;
   border-radius: 10px;
  
   box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.4);
@@ -73,8 +82,9 @@ margin-right: 12%;
 padding: 1px;
   border-radius: 10px;
   text-align: center;
-  margin-right: 13.5%;
+  margin-right: 17%;
   box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.4);
+  margin-top: -5%;
 
   
 }
@@ -89,7 +99,7 @@ padding: 1px;
 }
 
 
-/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 650px) {
   .col {
     width: 100%;
@@ -100,14 +110,22 @@ padding: 1px;
  }
  .text{
    margin-top: 5%;
-   margin-left: 5%;
+   margin-left: -10%;
+   margin-right: -10%;
  }
  .try{
    margin-top: 5%;
  }
  .color{
    margin-bottom: 9%;
+   margin-right: -10%;
+   margin-left: -10%;
  }
+ .try{
+   margin-right: -10%;
+   margin-left: -10%;
+ }
+ 
 }
 svg{
   position: absolute;
@@ -121,4 +139,10 @@ small{
   float: right;
   display: none;
 }
+@media  screen and (max-width: 600px){
+  svg{
+    margin-left: 68%;
+  }
+}
+
 
