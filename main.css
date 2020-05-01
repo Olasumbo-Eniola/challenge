@@ -70,7 +70,7 @@ input[type=submit]:hover {
 .color{
   background-color: white;
   padding: 20px;
-  margin-top: 10%;
+  margin-top: 7%;
 margin-right: 17%;
   border-radius: 10px;
  
@@ -78,19 +78,19 @@ margin-right: 17%;
   
 }
 .try{
-  background-color: blueviolet;
+  background-color: rgb(84, 44, 160);
 padding: 1px;
   border-radius: 10px;
   text-align: center;
   margin-right: 17%;
   box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.4);
-  margin-top: -5%;
+  margin-top: 5%;
 
   
 }
 .text{
   margin-left: 24%;
-  margin-top: 29%;
+  margin-top: 23%;
 }
 
 .text > h2{
