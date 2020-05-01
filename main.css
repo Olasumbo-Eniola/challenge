@@ -34,8 +34,8 @@ input:focus{
   background-color: transparent;
 }
 input:active{
-  border: none;
-  color: transparent;
+  border: 1px solid black;
+  background-color: transparent;
 }
 
 
